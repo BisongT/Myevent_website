@@ -25,11 +25,27 @@ $color-green: #0A1A71;
     text-transform: uppercase;
   }
 }
+.navbar-default {
+  background: none;
+  border:0px solid;
+  font-size:1.3em;
 
-nav ul, ul .submenu {
+ul{
+   width: 100%;
+
+  li{
+    width: 20%;
+    text-align: center;
+    position: relative;
+  }
+}
+
+}
+/* nav ul, ul .submenu {
   list-style-type: none;
   font-size: 12pt;
   text-align: center;
+  border: none;
 }
 
 nav ul li {
@@ -77,6 +93,7 @@ nav ul li:hover a {
   text-decoration: none;
 }
 
+*/
 
 .darrow {
   font-size: 12px;
