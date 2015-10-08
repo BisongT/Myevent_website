@@ -23,7 +23,7 @@ function news_events() {
 		'label'               => __( 'News & Events', 'text_domain' ),
 		'description'         => __( 'News & Events Description', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title' ),
+		'supports'            => array( 'title','editor','thumbnail' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -39,7 +39,7 @@ function news_events() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'News & Events', $args );
+	register_post_type( 'newsevents', $args );
 
 }
 
