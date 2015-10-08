@@ -27,7 +27,7 @@ $color-green: #0A1A71;
 }
 .navbar-default {
   background: none;
-  border:0px solid;
+  border: 0px solid;
   font-size:1.3em;
 
 ul{
@@ -37,10 +37,38 @@ ul{
     width: 20%;
     text-align: center;
     position: relative;
+  
   }
+
 }
 
 }
+
+ li .dropdown-menu>li{
+ background-color: #ffffff;
+ text-align: center;
+ width: 100%;
+ padding-top: 0;
+ padding: 7px;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.428571429;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: none;
+}
+
+
 /* nav ul, ul .submenu {
   list-style-type: none;
   font-size: 12pt;
