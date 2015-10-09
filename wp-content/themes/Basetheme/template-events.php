@@ -22,14 +22,20 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 		
 		debug(get_post());
+		debug(get_post_meta(get_the_id())[subheading][0]);
 		debug(get_post_meta(get_the_id()));
-
-		
-
+        debug(get_the_post_thumbnail());
 
 
 
-		} } else {
+
+
+
+		} 
+
+	} 
+
+		else {
 			echo 'no content';
 		}
 		

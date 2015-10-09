@@ -21,9 +21,13 @@
 
 
           <?php
+
+          //TODO: event not showing on over.
               if (has_nav_menu('primary_navigation')) :
                 wp_nav_menu(['theme_location' => 'primary_navigation','depth'=> 7,'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
               endif;
+
+             //  wp_nav_menu(['theme_location' => 'primary_navigation']);
           ?>
       </div>
     </nav>
