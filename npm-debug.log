@@ -1,23 +1,34 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
 1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install' ]
+1 verbose cli   'install',
+1 verbose cli   '-g' ]
 2 info using npm@2.14.3
 3 info using node@v4.1.0
-4 verbose readDependencies loading dependencies from C:\xampp\htdocs\Myevent_website\package.json
-5 error install Couldn't read dependencies
-6 verbose stack Error: ENOENT: no such file or directory, open 'C:\xampp\htdocs\Myevent_website\package.json'
-6 verbose stack     at Error (native)
-7 verbose cwd C:\xampp\htdocs\Myevent_website
-8 error Windows_NT 6.3.9600
-9 error argv "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
-10 error node v4.1.0
-11 error npm  v2.14.3
-12 error path C:\xampp\htdocs\Myevent_website\package.json
-13 error code ENOPACKAGEJSON
-14 error errno -4058
-15 error syscall open
-16 error package.json ENOENT: no such file or directory, open 'C:\xampp\htdocs\Myevent_website\package.json'
-16 error package.json This is most likely not a problem with npm itself.
-16 error package.json npm can't find a package.json file in your current directory.
-17 verbose exit [ -4058, true ]
+4 verbose install initial load of C:\Users\Bisong Tangban\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\Bisong Tangban\AppData\Roaming\npm\package.json
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: 'C:\\xampp\\htdocs\\Myevent_website',
+8 silly cache add   type: 'local' }
+9 error addLocal Could not install C:\xampp\htdocs\Myevent_website
+10 verbose stack Error: EISDIR: illegal operation on a directory, read
+10 verbose stack     at Error (native)
+11 verbose cwd C:\xampp\htdocs\Myevent_website
+12 error Windows_NT 6.3.9600
+13 error argv "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g"
+14 error node v4.1.0
+15 error npm  v2.14.3
+16 error code EISDIR
+17 error errno -4068
+18 error syscall read
+19 error eisdir EISDIR: illegal operation on a directory, read
+19 error eisdir This is most likely not a problem with npm itself
+19 error eisdir and is related to npm not being able to find a package.json in
+19 error eisdir a package you are trying to install.
+20 verbose exit [ -4068, true ]
