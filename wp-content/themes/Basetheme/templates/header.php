@@ -17,6 +17,7 @@
         </button>
       </div> <?php */ ?>
 
+<<<<<<< HEAD
      <?php /*  <div class="collapse navbar-collapse " id="primary-navigation">
         <nav class="container">
 
@@ -38,6 +39,9 @@
   </ul>
 </nav> */ ?>
 
+=======
+      <div class="collapse navbar-collapse " id="primary-navigation">
+>>>>>>> 401200e633f660de684a7dcd9072230066824cf0
           <?php
 
           //TODO: event not showing on over.
