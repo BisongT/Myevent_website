@@ -1,6 +1,4 @@
 <?php 
-define('WP_HOME','http://localhost:8888/Myevent_website');
-define('WP_SITEURL','http://localhost:8888/Myevent_website');
 // Global DB config
 define('WP_HOME','http://localhost/Myevent_website');
 define('WP_SITEURL','http://localhost/Myevent_website');
