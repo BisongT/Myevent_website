@@ -19,6 +19,10 @@
         </button>
       </div> <?php */ ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb044a37371b81b299b0af9ad3c28443fd73da7c
      <?php /*  <div class="collapse navbar-collapse " id="primary-navigation">
         <nav class="container">
 
@@ -41,7 +45,10 @@
 </nav> */ ?>
 
       <div class="collapse navbar-collapse " id="primary-navigation">
+<<<<<<< HEAD
         
+=======
+>>>>>>> bb044a37371b81b299b0af9ad3c28443fd73da7c
 
           <?php
 

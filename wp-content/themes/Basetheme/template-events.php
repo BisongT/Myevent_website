@@ -4,12 +4,13 @@
  */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
+  <div class="container"><?php get_template_part('templates/page', 'header'); ?></div>
   
+  <div class="container">
 <?php // WP_Query arguments
 
 $args = array (
-	'post_type'              => array( 'newsevents' ),
+	'post_type'       => array( 'newsevents' ),
 
 );
 
@@ -21,14 +22,7 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
 		
-		debug(get_post());
-		debug(get_post_meta(get_the_id())[subheading][0]);
-		debug(get_post_meta(get_the_id()));
-        debug(get_the_post_thumbnail());
-
-
-
-
+	 get_template_part('templates/post', 'event-loop'); 
 
 
 		} 
@@ -41,6 +35,7 @@ if ( $query->have_posts() ) {
 		
 		// Restore original Post Data
 		wp_reset_postdata();
-		 ?>)
+		 ?>
 
 <?php endwhile; ?>
+</div>
