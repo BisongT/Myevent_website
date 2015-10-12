@@ -1,5 +1,8 @@
 <?php 
 // Global DB config
+define('WP_HOME','http://localhost/Myevent_website');
+define('WP_SITEURL','http://localhost/Myevent_website');
+
 if (!defined('DB_NAME')) {
 	define('DB_NAME', 'bisongt');
 }

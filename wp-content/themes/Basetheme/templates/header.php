@@ -4,10 +4,12 @@
 <div id="top">
     <h1>LogoEvents</h1>
  </div>
-  <div class="container">
-  <?php  /* <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>Logo</a> */ ?>
 
-    <nav class="navbar navbar-default col-xs-12 ">
+  <div class="container">
+
+  <?php /*  <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>Logo</a> */?>
+
+     <nav class="navbar navbar-default col-xs-12 ">
 
     <?php  /*  ?> <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
@@ -17,7 +19,6 @@
         </button>
       </div> <?php */ ?>
 
-<<<<<<< HEAD
      <?php /*  <div class="collapse navbar-collapse " id="primary-navigation">
         <nav class="container">
 
@@ -39,9 +40,9 @@
   </ul>
 </nav> */ ?>
 
-=======
       <div class="collapse navbar-collapse " id="primary-navigation">
->>>>>>> 401200e633f660de684a7dcd9072230066824cf0
+        
+
           <?php
 
           //TODO: event not showing on over.
