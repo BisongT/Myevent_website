@@ -2,7 +2,7 @@
 <header class="banner" role="banner">
 
 <div id="top">
-    <h1>LogoEvents</h1>
+    <h1>(Logo)Events</h1>
  </div>
 
   <div class="container">
@@ -55,3 +55,5 @@
     </nav>
   </div>
 </header>
+<hr>
+

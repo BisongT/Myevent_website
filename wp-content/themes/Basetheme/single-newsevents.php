@@ -15,15 +15,11 @@
 
                 </div>
               </div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, tenetur, quasi. Excepturi eos doloremque eum deleniti, officia culpa distinctio vel numquam illum. Porro iusto eligendi officiis reprehenderit. Voluptatum, saepe, cumque.
+              
 
            </div>
             
-            <div class="col-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.   Reprehenderit nobis, consequuntur excepturi necessitatibus magni suscipit! Repellendus quis in quia sapiente incidunt eum! Consequuntur deleniti, atque officiis aliquid doloremque possimus odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ipsam cumque, enim velit, assumenda a. Debitis doloribus, aliquam, rem magni, dignissimos repellat at mollitia perspiciatis sunt ullam eum sit ipsum.
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.   Reprehenderit nobis, consequuntur excepturi necessitatibus magni suscipit! Repellendus quis in quia sapiente incidunt eum! Consequuntur deleniti, atque officiis aliquid doloremque possimus odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ipsam cumque, enim velit, assumenda a. Debitis doloribus, aliquam, rem magni, dignissimos repellat at mollitia perspiciatis sunt ullam eum sit ipsum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.   Reprehenderit nobis, consequuntur excepturi necessitatibus magni suscipit! Repellendus quis in quia sapiente incidunt eum! Consequuntur deleniti, atque officiis aliquid doloremque possimus odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ipsam cumque, enim velit, assumenda a. Debitis doloribus, aliquam, rem magni, dignissimos repellat at mollitia perspiciatis sunt ullam eum sit ipsum.</p>
+            <div class="col-sm-4">
            
               <?php the_permalink(); ?>
            </div>
@@ -42,7 +38,7 @@
                            <p class="p4">Lighting & Rentals: Name of Rentals</p>
                            <p class="p4">Catering: Name of Catering company</p>  <br />
 
-                 <div><img src="http://cliparts.co/cliparts/kTK/n4G/kTKn4GXMc.jpg"></div>
+                 <div><?php the_post( ); ?> <!--<img src="http://cliparts.co/cliparts/kTK/n4G/kTKn4GXMc.jpg">--></div>
 
         </div>
 

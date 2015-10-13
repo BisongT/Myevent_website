@@ -37,4 +37,4 @@
        </a>
       </div>
      </header> <!--End Head -->
-     <hr />
+    <hr>

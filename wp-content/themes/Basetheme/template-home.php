@@ -16,7 +16,14 @@
 <?php get_template_part('templates/carousel');?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <div class="container"> <?php get_template_part('templates/page-header'); ?></div>
-   <div class="container"><?php get_template_part('templates/content-page'); ?></div>
+  <section class="container-fluid">
+    <div class="page-header">
+      <a href="<?php the_permalink(); ?>"><h1 class="intro">Events</h1> </a>
+  	</div>
+  </section>>
+   
+   <div class="container" class="intro_text"><?php get_template_part('templates/content-page'); ?>
+
+   </div>
   <?php ?>
 <?php endwhile; ?>

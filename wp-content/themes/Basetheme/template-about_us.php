@@ -4,21 +4,40 @@
  */
 ?>
 
-<div class="container">
-      <div class="row">
+      <div class="container">
+         <img src="https://unsplash.it/980/237?image=815">
+  
+       </div>
+       <br />
+   <div class="container" style="text-align: center; margin-bottom: 0px;"><div><span><h2 class="intro"><strong>About Us</strong></h2></span></div></div>
+   <hr />
+   <section class="container"><h3 class="intro_text">We will make your dreams come true</h3></section>
+<hr>
 
-         <div class="col-sm-4">
-             <h4 class="intro">Heading</h4>
-             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <?php //get_template_part('templates/page', 'header'); ?>
+       
+             
 
-         </div>
+             <?php  if( have_rows('columns') ):
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-   <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
+
+                      while ( have_rows('columns') ) : the_row(); ?>
+
+                         <?php // Your loop code ?>
+                   
+                        <?php get_template_part('templates/aboutus-loop'); ?>
+
+                    <?php endwhile; ?>
+
+              <?php else: ?>
+                      
+                    <?php echo "no rows found"; ?>
+
+
+             <?php endif; ?>
+           
+
+
+   <?php //get_template_part('templates/content', 'page'); ?> 
+
+
