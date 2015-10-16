@@ -39,6 +39,7 @@
 
        <div class="col-sm-4" style="margin-left: 100px;">
            <h4 class="intro">News</h4>
+           <?php the_post();?>
           
          </div>
         

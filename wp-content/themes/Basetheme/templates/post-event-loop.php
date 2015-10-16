@@ -1,5 +1,7 @@
+<div class="col-lg-6">
+   <h2 class="intro"><?php the_title( );?></h2>
+  <div>
 
-<div class="col-md-6">
             <div class="card">
                 <div class="card-image">
                     <!-- <img class="img-responsive" src="http://www.audiovisualsvc.com/wp-content/gallery/avs-portfolio/imag0163.jpg"> -->
@@ -12,6 +14,5 @@
              </div>
           </div>
 
-
-
+</div>
 

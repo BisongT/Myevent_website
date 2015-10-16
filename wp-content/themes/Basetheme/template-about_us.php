@@ -5,7 +5,7 @@
 ?>
 
       <div class="container">
-         <img src="https://unsplash.it/980/237?image=815">
+        <img src="http://onehdwallpaper.com/wp-content/uploads/2014/10/Easter-Desktop-Backgrounds.jpg">
   
        </div>
        <br />
@@ -16,7 +16,7 @@
 
   <?php //get_template_part('templates/page', 'header'); ?>
        
-             
+  <div class="container-fluid">           
 
              <?php  if( have_rows('columns') ):
 
@@ -36,7 +36,7 @@
 
              <?php endif; ?>
            
-
+</div>
 
    <?php //get_template_part('templates/content', 'page'); ?> 
 
