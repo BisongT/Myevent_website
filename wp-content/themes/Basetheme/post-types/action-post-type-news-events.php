@@ -1,4 +1,42 @@
 <?php 
+// Register Custom Taxonomy
+function event_items() {
+
+	$labels = array(
+		'name'                       => 'events',
+		'singular_name'              => 'event',
+		'menu_name'                  => 'Events',
+		'all_items'                  => 'All Items',
+		'parent_item'                => 'Parent Item',
+		'parent_item_colon'          => 'Parent Item:',
+		'new_item_name'              => 'New Item Name',
+		'add_new_item'               => 'Add New Item',
+		'edit_item'                  => 'Edit Item',
+		'update_item'                => 'Update Item',
+		'view_item'                  => 'View Item',
+		'separate_items_with_commas' => 'Separate items with commas',
+		'add_or_remove_items'        => 'Add or remove items',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Items',
+		'search_items'               => 'Search Items',
+		'not_found'                  => 'Not Found',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'events', array( '' ), $args );
+
+}
+add_action( 'init', 'event_items', 0 );
+
+
+
 // Register Custom Post Type
 function news_events() {
 
@@ -24,7 +62,7 @@ function news_events() {
 		'description'         => __( 'News & Events Description', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title','editor','thumbnail' ),
-		'taxonomies'          => array( 'category', 'post_tag' ),
+		'taxonomies'          => array('events'),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -45,3 +83,4 @@ function news_events() {
 
 // Hook into the 'init' action
 add_action( 'init', 'news_events', 0 );
+

@@ -18,7 +18,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <section class="container-fluid">
     <div class="page-header">
-      <a href="<?php the_permalink(); ?>"><h1 class="intro">Events</h1> </a>
+      <a href="<?php the_field('page_link');?>"><h1 class="intro">Events</h1> </a>
   	</div>
   </section>>
    

@@ -180,6 +180,14 @@ img {
 
 .intro{
   color: $color-decor;
+  a {
+    color:$color-decor;
+    text-decoration:none;
+
+     hover{
+        text-decoration: none;
+      }
+  }
 }
 
 .intro_text{

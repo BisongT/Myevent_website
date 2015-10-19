@@ -1,7 +1,7 @@
 
 
 <div class="container" style="margin-bottom: 20px;">
-        <section><a href="/templates/layouts/event_eventspage.html" target="_self"><span class="labeltab">More Events</a></section>
+        <section><a href="<?php echo get_site_url() . '/events-5/';?>" target="_self"><span class="labeltab">More Events</a></section>
          <!-- check css for section -->
       </div>
 
@@ -9,7 +9,7 @@
 
          <div class="container">
           <div class="col-md-6">
-             <h2 class="intro"><?php the_title( );?></h2>
+             <h2 class="intro"><?php the_title();?></h2>
             <div class="card">
                 <div class="card-image">
                     <!-- <img class="img-responsive" src="http://www.audiovisualsvc.com/wp-content/gallery/avs-portfolio/imag0163.jpg"> -->
@@ -17,7 +17,7 @@
                   </div>
                 
                   <div class="card-action">
-                    <a href="<?php the_permalink(); ?>" target="new_blank">Contact us</a>
+                    <a href="<?php the_permalink(); ?>" target="new_blank"><?php the_title(); ?></a>
                 </div>
              </div>
           </div>
