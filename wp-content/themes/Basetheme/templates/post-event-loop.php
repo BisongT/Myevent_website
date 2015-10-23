@@ -1,5 +1,7 @@
 <div class="col-lg-6">
-   <h2 class="intro"><a href="<?php the_permalink();?>"><?php the_field('subheading');?></a></h2>
+
+   <?php //<?php the_title(); ?>
+   <h3 class="intro"><a href="<?php the_permalink();?>"><?php the_field('subheading');?></a></h3>
 
          <div>
 
@@ -10,10 +12,13 @@
                   </div>
                 
                   <div class="card-action">
-                    <a href="<?php the_field('page_link'); ?>" target="new_blank">Contact us</a>
+                    <a href="<?php the_field('page_link'); ?>" target="new_blank"><?php the_title( );?></a>
                 </div>
              </div>
           </div>
 
 </div>
+
+
+
 

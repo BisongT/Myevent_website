@@ -1,13 +1,14 @@
 
 
 <div class="container" style="margin-bottom: 20px;">
-        <section><a href="<?php echo get_site_url() . '/events-5/';?>" target="_self"><span class="labeltab">More Events</a></section>
+
+        <section><a href="<?php echo get_site_url().'/all-events/'; ?>" target="_self"><span class="labeltab">More Events</a></section>
          <!-- check css for section -->
       </div>
-
         <!--<div class="container" style="text-align: left; margin-bottom: 0px;"><div><span><h2><strong>Birthday Parties</strong></h2></span></div></div> -->
 
          <div class="container">
+         <h1>This is a single event</h1>
           <div class="col-md-6">
              <h2 class="intro"><?php the_title();?></h2>
             <div class="card">
@@ -17,13 +18,13 @@
                   </div>
                 
                   <div class="card-action">
-                    <a href="<?php the_permalink(); ?>" target="new_blank"><?php the_title(); ?></a>
+                    <a href="<?php the_field('page_link'); ?>" target="new_blank">Contact us</a>
                 </div>
              </div>
           </div>
 
                <div class="col-sm-2"></div>
-
+                
                 <div class="col-sm-3" style="background-color: rgb(224, 232, 240); margin-top: 15px;">
                    <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -44,5 +45,4 @@
 
 
        </div>
-
 
