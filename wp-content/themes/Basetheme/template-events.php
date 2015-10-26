@@ -20,6 +20,7 @@
 	 //get_template_part('templates/post', 'event-loop'); 
 
 $terms = get_terms( 'events' );
+
 debug($terms);
  //if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
      echo '<ul>';

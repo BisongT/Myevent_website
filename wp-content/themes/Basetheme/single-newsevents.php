@@ -1,5 +1,4 @@
 
-
 <div class="container" style="margin-bottom: 20px;">
         <section><a href="<?php echo get_site_url() . '/events-5/';?>" target="_self"><span class="labeltab">More Events</a></section>
          <!-- check css for section -->
@@ -44,5 +43,4 @@
 
 
        </div>
-
 

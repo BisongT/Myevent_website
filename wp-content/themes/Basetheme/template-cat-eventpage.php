@@ -18,10 +18,6 @@
   <div class="container">
 
 
-  
-
-<?php //End taxonomy ?>
-
 <?php while (have_posts()) : the_post(); ?>
 <?php // WP_Query arguments
 
