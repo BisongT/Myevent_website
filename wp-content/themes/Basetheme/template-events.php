@@ -15,24 +15,100 @@
 <hr>
   
   <div class="container">
+
+
 <?php // WP_Query arguments
 
 	 //get_template_part('templates/post', 'event-loop'); 
 
+<<<<<<< HEAD
 $terms = get_terms( 'events' );
 
 debug($terms);
+=======
+
+
+
+
+// no default values. using these as examples
+
+// $args = array(
+//     'orderby'           => 'name', 
+//     'order'             => 'ASC',
+//     'hide_empty'        => false, 
+//     'exclude'           => array(), 
+//     'exclude_tree'      => array(), 
+//     'include'           => array(),
+//     'number'            => '', 
+//     'fields'            => 'all', 
+//     'slug'              => '',
+//     'parent'            => '',
+//     'hierarchical'      => true, 
+//     'child_of'          => 0,
+//     'childless'         => false,
+//     'get'               => '', 
+//     'name__like'        => '',
+//     'description__like' => '',
+//     'pad_counts'        => false, 
+//     'offset'            => '', 
+//     'search'            => '', 
+//     'cache_domain'      => 'core'
+// ); 
+
+// $terms = get_terms('events', $args);
+
+
+
+
+//debug($terms);
+>>>>>>> af7e2fd2fd66b70d01296dfd8f3d20b0b63afaeb
  //if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-     echo '<ul>';
-     foreach ( $terms as $term ) {
-       echo '<li>' . $term->name . '</li>';
+
+     // foreach ( $terms as $term ) {
        
-     }
-     echo '</ul>';
+     //    //echo '<li>' . $term->name . '</li>'; 
+
+     //    echo  get_template_part('templates/post', 'event-loop');
+       
+     // }
+     
 // }
 
 
+
+
+
+
+
 ?>
+
+
+
+<?php 
+//getting all pages
+$my_wp_query = new WP_Query();
+$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+
+// Get the page as an Object
+$page_id =  get_the_id();
+
+// Filter through all pages and find Portfolio's children
+$children = get_page_children( $page_id, $all_wp_pages );
+
+// echo what we get back from WP to the browser
+//echo '<pre>' . print_r( $children, true ) . '</pre>';
+
+foreach ( $children as $child ) {
+       // debug($child);
+        echo  get_template_part('templates/post', 'event-loop');
+       
+     }
+
+ ?>
+
+
+
+
 <?php endwhile;?>
 
 </div>
