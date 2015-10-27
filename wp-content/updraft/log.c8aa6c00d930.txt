@@ -1,0 +1,49 @@
+0000.104 () Opened log file at time: Mon, 26 Oct 2015 06:53:58 +0000 on http://localhost/Myevent_website
+0000.105 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.11.12 WP: 4.3.1 PHP: 5.6.8 (Windows NT BISONG-PC 6.3 build 9200 (Windows 8.1 Home Premium Edition) i586) MySQL: 5.6.24 Server: Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 15.2M | 15.5M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.105 () Free space on disk containing Updraft's temporary directory: 837300.5 Mb
+0000.105 () Restore job started. Entities to restore: uploads, others, db
+0000.133 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.133 () Entity: db
+0000.133 () restore_backup(backup_file=backup_2015-10-23-1636_Myevent_wesite_ea595027c3ac-db.gz, type=db, info=a:0:{}, last_one=)
+0000.133 () Unpacking backup...
+0000.138 () Database successfully unpacked
+0000.139 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.139 () Using direct MySQL access; value of use_mysqli is: 1
+0000.165 () Max packet size: 32 Mb
+0000.165 () Entering maintenance mode
+0000.165 () Enabling Maintenance mode&#8230;
+0000.169 () <strong>Backup of:</strong> http://localhost:8888/Myevent_website
+0000.178 () Content URL: http://localhost:8888/Myevent_website/wp-content
+0000.178 () Old table prefix: wp_
+0000.178 () Site information: multisite=0
+0000.182 () New table prefix: wp_
+0000.551 () Restoring table (InnoDB): wp_options
+0002.694 () Restoring prior UD configuration (table: wp_options; keys: 84)
+0009.648 () Restoring table (InnoDB): wp_users
+0010.900 () Restoring table (InnoDB): wp_usermeta
+0011.646 () Restoring table (InnoDB): wp_commentmeta
+0012.582 () Restoring table (InnoDB): wp_comments
+0013.479 () Restoring table (InnoDB): wp_links
+0014.381 () Restoring table (InnoDB): wp_postmeta
+0016.007 () Restoring table (InnoDB): wp_posts
+0018.250 () Restoring table (InnoDB): wp_term_relationships
+0019.158 () Restoring table (InnoDB): wp_term_taxonomy
+0020.663 () Restoring table (InnoDB): wp_terms
+0022.059 () Leaving maintenance mode
+0022.059 () Disabling Maintenance mode&#8230;
+0022.060 () Finished: lines processed: 39 in 21.91 seconds
+0022.061 () Cleaning up rubbish...
+0023.199 () Entity: uploads
+0023.199 () restore_backup(backup_file=backup_2015-10-23-1636_Myevent_wesite_ea595027c3ac-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:50:"C:\xampp\htdocs\Myevent_website/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0023.200 () Unpacking backup... (backup_2015-10-23-1636_Myevent_wesite_ea595027c3ac-uploads.zip, 18.8 Mb)
+0024.972 () Moving old data: filesystem method / updraft_dir is potentially possible
+0024.974 () Moving old data: can potentially use wp_filesystem method / -old
+0024.975 () Moving old data out of the way...
+0024.995 () Moving unpacked backup into place...
+0025.033 () Cleaning up rubbish...
+0025.033 () Entity: others
+0025.034 () restore_backup(backup_file=backup_2015-10-23-1636_Myevent_wesite_ea595027c3ac-others.zip, type=others, info=a:2:{s:4:"path";s:42:"C:\xampp\htdocs\Myevent_website/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0025.034 () Unpacking backup... (backup_2015-10-23-1636_Myevent_wesite_ea595027c3ac-others.zip, 0 Mb)
+0025.062 () Cleaning up rubbish...
+0025.069 () Restore successful!
+0025.069 () Restore successful

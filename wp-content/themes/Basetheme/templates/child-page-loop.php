@@ -10,7 +10,19 @@
                     <!-- <img class="img-responsive" src="http://www.audiovisualsvc.com/wp-content/gallery/avs-portfolio/imag0163.jpg"> -->
                    <?php the_child_thumbnail(); ?>
                   </div>
-                
+
+                  <div class="card-action">
+                    <a href="<?php the_field('page_link'); ?>" target="new_blank"><?php the_title( );?></a>
+                </div>
+             </div>
+          </div>
+
+</div>
+
+                    <!-- <img class="img-responsive" src="http://www.audiovisualsvc.com/wp-content/gallery/avs-portfolio/imag0163.jpg"> -->
+                   <?php the_post_thumbnail(); ?>
+                  </div>
+
                   <div class="card-action">
                     <a href="<?php the_field('page_link'); ?>" target="new_blank"><?php the_title( );?></a>
                 </div>

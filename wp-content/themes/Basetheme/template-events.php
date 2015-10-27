@@ -13,19 +13,16 @@
    <hr />
    <section class="container"><h3 class="intro_text">We will make your dreams come true</h3></section>
 <hr>
-  
+
   <div class="container">
 
 
 <?php // WP_Query arguments
 
-	 //get_template_part('templates/post', 'event-loop'); 
-
-<<<<<<< HEAD
+	 //get_template_part('templates/post', 'event-loop');
 $terms = get_terms( 'events' );
 
 debug($terms);
-=======
 
 
 
@@ -33,58 +30,47 @@ debug($terms);
 // no default values. using these as examples
 
 // $args = array(
-//     'orderby'           => 'name', 
+//     'orderby'           => 'name',
 //     'order'             => 'ASC',
-//     'hide_empty'        => false, 
-//     'exclude'           => array(), 
-//     'exclude_tree'      => array(), 
+//     'hide_empty'        => false,
+//     'exclude'           => array(),
+//     'exclude_tree'      => array(),
 //     'include'           => array(),
-//     'number'            => '', 
-//     'fields'            => 'all', 
+//     'number'            => '',
+//     'fields'            => 'all',
 //     'slug'              => '',
 //     'parent'            => '',
-//     'hierarchical'      => true, 
+//     'hierarchical'      => true,
 //     'child_of'          => 0,
 //     'childless'         => false,
-//     'get'               => '', 
+//     'get'               => '',
 //     'name__like'        => '',
 //     'description__like' => '',
-//     'pad_counts'        => false, 
-//     'offset'            => '', 
-//     'search'            => '', 
+//     'pad_counts'        => false,
+//     'offset'            => '',
+//     'search'            => '',
 //     'cache_domain'      => 'core'
-// ); 
+// );
 
 // $terms = get_terms('events', $args);
 
-
-
-
 //debug($terms);
->>>>>>> af7e2fd2fd66b70d01296dfd8f3d20b0b63afaeb
  //if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 
      // foreach ( $terms as $term ) {
-       
-     //    //echo '<li>' . $term->name . '</li>'; 
+
+     //    //echo '<li>' . $term->name . '</li>';
 
      //    echo  get_template_part('templates/post', 'event-loop');
-       
+
      // }
-     
+
 // }
-
-
-
-
-
 
 
 ?>
 
-
-
-<?php 
+<?php
 //getting all pages
 $my_wp_query = new WP_Query();
 $all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
@@ -101,13 +87,10 @@ $children = get_page_children( $page_id, $all_wp_pages );
 foreach ( $children as $child ) {
        // debug($child);
         echo  get_template_part('templates/post', 'event-loop');
-       
+
      }
 
  ?>
-
-
-
 
 <?php endwhile;?>
 
