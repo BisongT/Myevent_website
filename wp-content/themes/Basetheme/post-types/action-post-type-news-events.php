@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Register Custom Taxonomy
 function event_items() {
 
@@ -61,8 +61,8 @@ function news_events() {
 		'label'               => __( 'News & Events', 'text_domain' ),
 		'description'         => __( 'News & Events Description', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title','editor','thumbnail' ),
-		'taxonomies'          => array('events'),
+		'supports'            => array( 'title','editor','thumbnail'),
+		'taxonomies'          => array('category','events'),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -83,4 +83,3 @@ function news_events() {
 
 // Hook into the 'init' action
 add_action( 'init', 'news_events', 0 );
-
