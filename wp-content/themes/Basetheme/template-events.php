@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Events page
+ * Template Name:All Events page
  */
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -13,24 +13,46 @@
    <hr />
    <section class="container"><h3 class="intro_text">We will make your dreams come true</h3></section>
 <hr>
-  
+
   <div class="container">
 <?php // WP_Query arguments
 
-	 //get_template_part('templates/post', 'event-loop'); 
+	 //get_template_part('templates/post', 'event-loop');
 
-$terms = get_terms( 'events' );
+//$terms = get_terms( 'events' );
 
-debug($terms);
+//debug($terms);
  //if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-     echo '<ul>';
-     foreach ( $terms as $term ) {
-       echo '<li>' . $term->name . '</li>';
-       
-     }
-     echo '</ul>';
+    //echo '<ul>';
+     //foreach ( $terms as $term ) {
+       //echo '<li>' . $term->name . '</li>';
+
+     //}
+     //echo '</ul>';
 // }
 
+
+$args = array( 'hide_empty' => 0 );
+
+$terms = get_terms( 'events', $args );
+//debug($terms);
+if ( ( $terms) ) {
+    $count = count( $terms);
+    $i = 0;
+    $term_list = '<ul class="intro">';
+    foreach ( $terms as $term ) {
+        $i++;
+    	$term_list .= "<li>" .'<a href="' . get_term_link( $term ) . '" title="' . sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) . '">' . $term->name . '</a>'."</li>";
+    	if ( $count != $i ) {
+            $term_list .= ' &middot; ';
+        }
+        else {
+            $term_list .= '</ul>';
+        }
+    }
+    echo $term_list;
+
+}
 
 ?>
 <?php endwhile;?>
