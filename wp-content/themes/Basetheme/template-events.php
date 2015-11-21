@@ -51,10 +51,10 @@ if ( ( $terms) ) {
         }
     }
     echo $term_list;
-
 }
 
 ?>
 <?php endwhile;?>
+
 
 </div>

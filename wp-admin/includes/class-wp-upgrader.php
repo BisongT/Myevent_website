@@ -2370,11 +2370,10 @@ class Core_Upgrader extends WP_Upgrader {
 			if ( 'wp-content' == substr( $file, 0, 10 ) )
 				continue;
 			if ( ! file_exists( ABSPATH . $file ) || md5_file( ABSPATH . $file ) !== $checksum )
-				//return false;
-			return true;
+				return false;
 		}
 
-		
+		return true;
 	}
 }
 
