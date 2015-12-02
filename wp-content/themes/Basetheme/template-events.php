@@ -45,6 +45,7 @@ if ( ( $terms) ) {
     	$term_list .= "<li>" .'<a href="' . get_term_link( $term ) . '" title="' . sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) . '">' . $term->name . '</a>'."</li>";
     	if ( $count != $i ) {
             $term_list .= ' &middot; ';
+            //Add code here to do something
         }
         else {
             $term_list .= '</ul>';
