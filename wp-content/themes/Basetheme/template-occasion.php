@@ -13,6 +13,8 @@
       $query = new WP_Query($args);
       while ($query -> have_posts()): $query -> the_post();
 
+      get_template_part();
+
      ?>
 
      <h2 class="intro"><?php the_title(); ?></h2>

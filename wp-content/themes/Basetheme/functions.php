@@ -19,8 +19,8 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
-  'post-types/action-post-type-news-events.php',     // Post-types
-  //'post-types/action-post-type-occasions.php', //Post-types
+  //'post-types/action-post-type-news-events.php',     // Post-types
+  'post-types/action-post-type-occasions.php', //Post-types
   'lib/function-debug.php',     // Shows the functions in php
 
 ];
