@@ -1,3 +1,6 @@
 node_modules
 bower_components
 local-config.php
+wp-includes/
+wp-content/
+wp-admin/
