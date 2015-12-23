@@ -17,7 +17,5 @@
       get_template_part('templates/post', 'event-loop');
 
      ?>
-  <!--  <h2 class="intro"> <?php the_title(); ?> </h2>  -->
-
 <?php endwhile; ?>
 </div>

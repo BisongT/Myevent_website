@@ -14,7 +14,7 @@
    <section class="container"><h3 class="intro_text">We will make your dreams come true</h3></section>
 
 <hr>
-  
+
   <div class="container">
 
 
@@ -22,11 +22,11 @@
 <?php // WP_Query arguments
 
 
-// WP_Query arguments
+// WP_Query arguments put everything you want displayed within the array ($args)
 $args = array (
 	'post_type'       => array( 'newsevents' ),
     'events'          => get_field('taxonomy'),
-	
+
 );
 
 
@@ -38,11 +38,11 @@ $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
-		
-	 get_template_part('templates/post', 'event-loop'); 
-	   
+
+	 get_template_part('templates/post', 'event-loop');
+
 	}
-} 
+}
 
 else {
 	echo 'no posts';
