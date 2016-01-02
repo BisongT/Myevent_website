@@ -11,7 +11,8 @@
 <div class="container">
     <?php
       $args = array(
-        'post_type' => array('occasions')
+        'post_type' => array('occasions'),
+          'myoccasions' => get_field('taxonomy')
       );
       $query = new WP_Query($args);
       while ($query -> have_posts()): $query -> the_post();

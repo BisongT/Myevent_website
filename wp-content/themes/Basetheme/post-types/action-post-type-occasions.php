@@ -3,12 +3,12 @@
 function Occasion_items() {
 
 	$labels = array(
-		'name'                  => 'Occasions',
-		'singular_name'         => 'Occasion',
-		'menu_name'             => 'Occasions',
+		'name'                  => 'myoccasions',
+		'singular_name'         => 'myoccasion',
+		'menu_name'             => 'Myoccasions',
 		'parent_item'          	=> 'parent_item',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Occasions',
+		'all_items'             => 'All myoccasions',
 		'add_new_item'          => 'Add New Occasion',
 		'add_new'               => 'Add New',
 		'new_item'              => 'New Item',
@@ -25,7 +25,7 @@ function Occasion_items() {
 		);
 
 	$args = array(
-		'label'                 => __( 'Occasion', 'text_domain' ),
+		'label'                 => __( 'Myoccasion', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( ),
@@ -44,7 +44,7 @@ function Occasion_items() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_taxonomy( 'occasions', array( '' ), $args );
+	register_taxonomy( 'myoccasions', array( '' ), $args );
 
 }
 add_action( 'init', 'Occasion_items', 0 );
@@ -77,7 +77,7 @@ function News_Occasions() {
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array('title','editor','thumbnail' ),
-		'taxonomies'            => array( 'occasions' ),
+		'taxonomies'            => array( 'myoccasions' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

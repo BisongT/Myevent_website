@@ -1,5 +1,5 @@
 <div class="col-lg-6">
-   <h2 class="intro"> <?php the_title(); ?> </h2>
+   <h2 class="intro"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
    <h2 class="intro"><a href="<?php the_permalink();?>"><?php the_field('subheading');?></a></h2>
 
          <div>
